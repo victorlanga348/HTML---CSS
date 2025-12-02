@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 45px;
+        }
+        li{
+            text-decoration: underline;
+            position: relative;
+            padding-left: 25px;
+        }
+        li::before{
+            content: "✔️";
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <div>
+                <li>Victor</li>
+                <li>angela</li>
+                <li>manga</li>
+            </div>
+            <div>
+                <li>ivan</li>
+                <li>pai</li>
+                <li>langa</li>
+            </div>
+        </ul>
+</body>
+</html>

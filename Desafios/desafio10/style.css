@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: "idroid" ;
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+
+body{
+    background-color: lightgreen;
+    font-family: sans-serif;
+}
+
+.cabecalho{
+    background-image: linear-gradient(to bottom, #33e08c, #1a5529);
+    height: 200px;
+    color: white;
+    padding:7px;
+    box-shadow: 0 2.5px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.cabecalho > h1 {
+    margin: 15px;
+}
+
+#p1{
+    margin-top: 35px
+}
+
+.cabecalho > header{
+    display: flex;
+    margin: 58px 0;
+    text-align: left;
+    gap: 15px;
+    font-weight: 700;
+    font-size: small;
+}
+
+#home:hover, #noticias:hover, #curiosidades:hover, #faleconosco:hover{
+    background-color: #1a5529;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+main{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding: 10px 15px;
+    text-align: justify;
+    border-radius: 0 0 7px 7px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.409);
+}
+
+main > h1, main > h2{
+    margin: 5px 0;
+    color: #1a5529;
+    font-family: "idroid", sans-serif;
+    font-size: larger;
+}
+
+main > p {
+    text-indent: 25px;
+    margin: 20px 0;
+}
+
+strong{
+    color: #068c0f;
+}
+
+h2{
+    background-color: #33e08c6e;
+    padding: 0 7px;
+    font-size: medium;
+}
+
+a{
+    text-decoration: none;
+    color: #068c0f;
+    font-weight: 700;
+}
+
+img{
+    display: flex;
+    margin: auto;
+    max-width: 90%;
+}
+
+h3{
+    color: white;
+    background-color: #1a5529;
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+}
+
+.box{
+    background-color: #33e08c62;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.368);
+    padding: 0 0 7px 0;
+}
+
+.ul{
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-around;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul > li {
+    text-decoration: underline;
+}
+
+.certo{
+    width: 50px;
+}
+
+div > p{
+    text-indent: 25px;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+footer{
+    width: 100%;
+    background-color: #1a5529;
+    color: #068c0f;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: smaller;
+}
+
+#gustavo, #curso{
+    color: white;
+}
