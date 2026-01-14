@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            width: 150px;
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Provincia</th>
+                <th>Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Niassa</td>
+                <td class = "num">1.810.794</td>
+            </tr>
+            <tr>
+                <td>Cabo Delgado</td>
+                <td class = "num">2.320.261</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td class = "num">5.758.920</td>
+            </tr>
+            <tr>
+                <td>Zambezia</td>
+                <td class = "num">5.164.732</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td class = "num">2.648.941</td>
+            </tr>
+            <tr>
+                <td>Manica</td>
+                <td class = "num">1.945.994</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class = "num">2.259.248</td>
+            </tr>
+            <tr>
+                <td>Inhambane</td>
+                <td class = "num">1.488.676</td>
+            </tr>
+            <tr>
+                <td>Gaza</td>
+                <td class = "num">1.422.460</td>
+            </tr>
+            <tr>
+                <td>Maputo-Provincia</td>
+                <td class = "num">1.968.906</td>
+            </tr>
+            <tr>
+                <td>Maputo-Cidade</td>
+                <td class = "num">1.120.867</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total da populacao</th>
+                <td class = "num"><strong>27.909.798</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            height: 400px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: bottom;
+        }
+
+        .numero{
+            text-align: right;
+            vertical-align: top;
+        }
+
+        #unico{
+            vertical-align: top;
+        }
+
+        #excecao{
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>
+            <td id="unico">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td class="numero">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td class="numero">B3</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero" id="excecao">C4</td>
+        </tr>
+    </table>
+</body>
+</html>
