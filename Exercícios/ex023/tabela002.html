@@ -9,6 +9,14 @@
             border-collapse: collapse;
         }
 
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            font-weight: bolder;
+        }
+
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -17,7 +25,7 @@
         td, th{
             border: 1px solid black;
             padding: 10px;
-            width: 150px;
+            width: 200px;
         }
 
         .num{
@@ -27,11 +35,12 @@
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
-    <table>
+    <table  style="table-layout: fixed; width: 400px;">
+        <caption>Distribuição da População por Província</caption>
         <thead>
             <tr>
-                <th>Provincia</th>
-                <th>Populacao</th>
+                <th scope="col">Provincia</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -82,7 +91,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total da populacao</th>
+                <th scope="row">Total da populacao</th>
                 <td class = "num"><strong>27.909.798</strong></td>
             </tr>
         </tfoot>
