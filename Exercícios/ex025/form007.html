@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="iprov">Provincias: </label>
+            <select name="prov" id="iprov">
+                <option value="">----Escolha----</option>
+                <optgroup label="Norte">
+                    <option value="CB">Cabo Delgado</option>
+                    <option value="NP">Nampula</option>
+                    <option value="ZA">Zambezia</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="IB">Inhambane</option>
+                    <option value="GZ">Gaza</option>
+                    <option value="MP">Maputo</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iptf">Profissao: </label>
+            <input type="text" name="prof" id="iprof" list="profissoes">
+            <datalist id="profissoes">
+                <option>Professor</option>
+                <option>Contabilista</option>
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
