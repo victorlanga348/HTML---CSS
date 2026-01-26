@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*  Estilos para impressoras  */
+
+*{
+    margin: 10;
+    padding: 10;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: "Esse site foi impresso atraves do site de 'github.com/victorlanga348'";
+}
