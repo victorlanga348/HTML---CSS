@@ -7,3 +7,55 @@
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body, html{
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+    text-align: center;
+}
+
+header h1{
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+menu a{
+    border: 1px solid darkgray;
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(177, 176, 176);
+}
+
+a:active{
+    opacity: 0.8;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+article h2{
+    margin-bottom: 20px;
+}
+
+article p{
+    margin-bottom: 20px;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
