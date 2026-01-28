@@ -1,3 +1,80 @@
 @charset "UTF-8";
 
 /* Versao para todos tipos de midias */
+
+@media print { /* Impressora */
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: "Criador do conteudo 'hithub.com/victorlanga348'";
+        text-decoration: underline;
+        display: flex;
+        justify-content: center;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    #celular{ display: none; }
+    #tablet{ display: none; }
+    #impressora{ display: block; }
+    #laptop{ display: none; }
+    #televisao{ display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* tablet */
+    body{
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+
+    main{
+        width: 500px;
+    }
+
+    #celular{ display: none; }
+    #tablet{ display: block; }
+    #impressora{ display: none; }
+    #laptop{ display: none; }
+    #televisao{ display: none; }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) { /* laptop */
+    body{
+        background-image: url("../imagens/back-pc.jpg");
+    }
+
+    main{
+        width: 600px;
+    }
+
+    #celular{ display: none; }
+    #tablet{ display: none; }
+    #impressora{ display: none; }
+    #laptop{ display: block; }
+    #televisao{ display: none; }
+}
+
+@media screen and (min-width: 1281px){ /* telas grandes */
+    body{
+        background-image: url("../imagens/back-tv.jpg");
+    }
+
+    main{
+        width: 700px;
+    }
+
+    #celular{ display: none; }
+    #tablet{ display: none; }
+    #impressora{ display: none; }
+    #laptop{ display: none; }
+    #televisao{ display: block; }
+}
