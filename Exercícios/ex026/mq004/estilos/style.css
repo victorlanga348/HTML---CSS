@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Versao mobile first */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background: black url("../imagens/back-phone.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+main{
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.842);
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+#celular{ display: block; }
+#tablet{ display: none; }
+#impressora{ display: none; }
+#laptop{ display: none; }
+#televisao{ display: none; }
