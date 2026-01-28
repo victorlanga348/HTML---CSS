@@ -2,6 +2,15 @@
 
 /* Versao para todos tipos de midias */
 
+/* Typical device brakpoint
+    Pequenas telas: 320px - 480px
+    Celular: 601px - 768px
+    Tablet: 769px - 1024px
+    Laptop: 1025px - 1280px
+    Grandes desktops: 1281px - 1440px
+    Grandes telas: acima de 1441px
+*/
+
 @media print { /* Impressora */
     *{
         font-family: 'Courier New', Courier, monospace;
