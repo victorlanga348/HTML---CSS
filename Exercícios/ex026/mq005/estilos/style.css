@@ -21,6 +21,26 @@ header h1{
     padding: 10px;
 }
 
+#menuBurger{
+    background-color: rgb(48, 48, 48);
+    color: white;
+    padding: 10px;
+    width: 100vw;
+}
+
+#menuBurger:hover{
+    background-color: white;
+    color: black;
+}
+
+#menuBurger:active{
+    opacity: 0.8;
+}
+
+#itens{
+    display: none;
+}
+
 ul{
     list-style: none;
 }
