@@ -14,10 +14,10 @@ body, html{
 
 header{
     background-color: gray;
-    text-align: center;
 }
 
 header h1{
+    text-align: center;
     padding: 10px;
 }
 
@@ -25,7 +25,8 @@ header h1{
     background-color: rgb(48, 48, 48);
     color: white;
     padding: 10px;
-    width: 100vw;
+    text-align: center;
+    display: block;
 }
 
 #menuBurger:hover{
@@ -51,6 +52,7 @@ menu a{
     padding: 10px;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 a:hover{
@@ -78,4 +80,5 @@ article p{
     margin-bottom: 20px;
     text-indent: 20px;
     line-height: 1.5em;
+    text-align: justify;
 }
