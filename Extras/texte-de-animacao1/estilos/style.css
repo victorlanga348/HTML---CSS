@@ -11,12 +11,18 @@
 body, html{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 
     position: relative;
 }
 
-h1{
-    text-align: center;
+#container{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    font-size: 5em;
 
     position: absolute;
     top: 50%;
@@ -24,20 +30,38 @@ h1{
     transform: translate(-50%, -50%);
 }
 
-.element{
-    animation: loading 3s ease-in-out infinite;
+#h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(0px);
+    animation: loadingH 2s forwards infinite;
 }
 
-@keyframe loading{
-    0%{
-        transform: translatex(0);
-    }
+#i{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(0px);
+    animation: loadingI 2s forwards infinite;
+}
 
-    50%{
-        transform: translatex(200px);
+@keyframes loadingH{
+    0%{
+        transform: translateX(-350px);
     }
 
     100%{
-        transform: translatex(400px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes loadingI{
+    0%{
+        transform: translateX(350px);
+    }
+
+    100%{
+        transform: translateX(0px);
     }
 }
