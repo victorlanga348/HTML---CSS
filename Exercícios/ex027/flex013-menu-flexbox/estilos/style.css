@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
     width: 100vw;
@@ -15,40 +15,43 @@ body{
     font-size: 1em;
 }
 
-header{
+header {
     background-color: gray;
-    padding: 20px;
-}
-
-header h1{
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-}
-
-nav{
+    padding: 10px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     align-items: center;
-    gap: 5px;
+    justify-content: space-between;
 }
 
-a{
+header h1 {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
+    flex: 0 0 200px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+a {
     text-decoration: none;
     background-color: black;
     color: white;
     border-radius: 5px;
     padding: 5px;
-    width: 100%;
     text-align: center;
+    margin: 5px;
 }
 
-a:hover{
+a:hover {
     background-color: rgb(65, 65, 65);
     color: black;
+    transition: background-color .5s;
 }
 
-main{
+main {
     border-radius: 10px;
     margin: 10px;
     background-color: white;
@@ -56,7 +59,7 @@ main{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.548);
 }
 
-p{
+p {
     text-indent: 1.5em;
     margin-top: 5px;
 }

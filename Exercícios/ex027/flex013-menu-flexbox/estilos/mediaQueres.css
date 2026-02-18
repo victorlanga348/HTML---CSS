@@ -1,24 +1,2 @@
 @charset "UTF-8";
 
-
-@media screen and (min-width: 700px) {
-    header{
-        display:flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    nav{
-        flex-flow: row nowrap;
-    }
-
-    h1{
-        margin-right: 200px;
-    }
-
-    a:hover{
-        background-color: white;
-        color: black;
-    }
-}
