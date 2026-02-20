@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        div.container{
+            height: 250px;
+            border: 3px solid black;
+            display: grid;            
+
+            /* tamanho de colunas
+            grid-template-columns: auto auto auto; */
+
+            /* tamanho de linhas
+            grid-template-rows: auto auto auto; */
+
+            /* funcao repeat
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(3, auto); 
+            
+            repeat(quantas vezes que vai se repetir, tamanho que vai se repetir)*/
+
+            /* shorthand dos templates
+            grid-template: grid */
+            grid-template: repeat(3, auto) / repeat(3, auto);
+            
+            /* espaco entre as linhas */
+            gap: 10px;
+
+            /* por padrao
+            align-items: normal;
+            justify-items: normal;
+            align-content: normal;
+            justify-content: normal; */
+
+            /* shorthand dos items 
+             place-items: align-items + justify-items */
+            place-items: normal normal;
+
+            /* shorthand dos content
+            place-content: align-content + justify-content */
+            place-content: normal normal;
+
+        }
+        div.item{
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+    </div>
+</body>
+</html>
