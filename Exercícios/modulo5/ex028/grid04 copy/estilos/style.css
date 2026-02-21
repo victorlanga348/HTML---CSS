@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+div.container{
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    border: 3px solid black;
+}
+
+div.caixa01{
+    background-color: red;
+    /* grid-row: 1;
+    grid-column: 1 / 5; */
+    /* se eu nao colocar o segundo paramentro ele entende que vai terminar na linha ou na coluna imediatamente seguinte */
+
+
+    /* span significa que vai saltar n linhas ou n colunas */
+
+    /* grid-area: row-start / column-start / row-end / column-end; */
+    grid-area: 1 / 1 / 1 / span 4;
+}
+
+div.caixa02{
+    background-color: green;
+    /* grid-row: 2 / 4;
+    grid-column: 1 / 3; */
+    grid-area: 2 / 1 / span 3 / span 2;
+}
+
+div.caixa03{
+    background-color: blue;
+    /* grid-row: 2 / 4;
+    grid-column: 3 / 5; */
+    grid-area: 2 / 3 / span 3 / span 4;
+}
